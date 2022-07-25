@@ -6,6 +6,7 @@ public class Pants extends Product{
 
 
     public Pants(String waist, double price, String color, String brand) {
+        super(price, color, brand);
         this.waist = waist;
       
     }
