@@ -33,12 +33,15 @@ public class Pants extends Product{
             return false;
         }
         Pants pants = (Pants) o;
-        return Objects.equals(waist ,pants.waist);
+        return waist == pants.waist
+        && super.getPrice() == pants.getPrice()
+        && super.getColor() == pants.getColor()
+        && super.getBrand() == pants.getBrand();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(waist);
+        return Objects.hash(waist, super.getPrice(), super.getColor(), super.getBrand());
     }
 
 
