@@ -29,6 +29,13 @@ public class Shirt extends Product{
         this.size = size;
     }
    
+    @Override
+    public void fold() {
+        System.out.println("lay shirt on flat surface");
+        System.out.println("fold the shirt sideways");
+        System.out.println("bring the sleeves in");
+        System.out.println("fold from the bottom up");
+    }
 
     //check if object fields are equal
     @Override
