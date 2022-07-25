@@ -14,4 +14,14 @@ public class Pants extends Product{
         this.waist = source.waist;
     }
 
+
+    public double getWaist() {
+        return this.waist;
+    }
+
+    public void setWaist(double waist) {
+        this.waist = waist;
+    }
+
+
 }

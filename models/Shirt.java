@@ -16,5 +16,15 @@ public class Shirt extends Product{
         this.size = source.size;
     }
 
+
+    public String getSize() {
+        return this.size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+
     
 }
