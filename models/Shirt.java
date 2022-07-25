@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Objects;
+
 public class Shirt extends Product{
     private String size;
     
@@ -25,6 +27,26 @@ public class Shirt extends Product{
         this.size = size;
     }
 
+    //check if object fields are equal
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Shirt)) {
+            return false;
+        }
+        Shirt shirt = (Shirt) o;
+        return size.equals(shirt.size)
+        && super.getPrice() == shirt.getPrice()
+        && super.getColor() == shirt.getColor()
+        && super.getBrand() == shirt.getBrand();
+    }
+
+    //making sure objects that are equal because of fields have the same hash code
+    @Override
+    public int hashCode() {
+        return Objects.hash(size, super.getPrice(), super.getColor(), super.getBrand());
+    }
 
     
 }
