@@ -11,5 +11,10 @@ public class Shirt extends Product{
         
     }
 
+    public Shirt(Shirt source){
+        super(source);
+        this.size = source.size;
+    }
+
     
 }

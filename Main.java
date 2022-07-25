@@ -1,3 +1,4 @@
+import models.Pants;
 import models.Shirt;
 
 public class Main {
@@ -6,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Shirt shirt = new Shirt("Small", 5.99, "blue", "nike");
+        Pants pant = new Pants(32, 24.99, "blue", "klein");
     }
   
     /**
