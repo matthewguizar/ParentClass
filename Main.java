@@ -6,7 +6,7 @@ public class Main {
     static final String FILE_NAME = "products.txt";
 
     public static void main(String[] args) {
-        Shirt shirt = new Shirt("Small", 5.99, "blue", "nike");
+        Shirt shirt = new Shirt(Shirt.Size.SMALL, 5.99, "blue", "nike");
         Pants pant = new Pants(32, 24.99, "blue", "klein");
     }
   
