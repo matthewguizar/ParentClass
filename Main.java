@@ -8,6 +8,9 @@ public class Main {
     public static void main(String[] args) {
         Shirt shirt = new Shirt(Shirt.Size.SMALL, 5.99, "blue", "nike");
         Pants pant = new Pants(32, 24.99, "blue", "klein");
+        Pants pants2 = new Pants(34, 104.99, "red", "jangler");
+
+        System.out.println(pant.compareTo(pants2));
     }
   
     /**
