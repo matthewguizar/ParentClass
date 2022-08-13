@@ -43,8 +43,10 @@ public abstract class Product implements Comparable<Product>{
         this.brand = brand;
     }
 
-    
-    public abstract void fold();
+    /*Parent class implementing abstract method. 
+    Child or subclasses are forced to override.
+    abstract methods do not have a body*/
+    public abstract void fold();//abstract methods can be implemented in many ways
     
     @Override
     public int compareTo(Product specifiedObject) {
