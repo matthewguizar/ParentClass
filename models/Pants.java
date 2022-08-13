@@ -56,7 +56,6 @@ public class Pants extends Product implements Discountable{
         return Objects.hash(waist, super.getPrice(), super.getColor(), super.getBrand());
     }
 
-    
 
 
     @Override

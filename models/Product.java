@@ -50,12 +50,16 @@ public abstract class Product implements Comparable<Product>{
     
     @Override
     public int compareTo(Product specifiedObject) {
-        String className = this.getClass().getSimpleName();
+        //getting name of class that calls method
+        String className = this.getClass().getSimpleName();//getting class and then making it into a String
+        //getting name of class passed in
         String sClassName = specifiedObject.getClass().getSimpleName();
+        //checking if they are the same class (sorts by class)
         if (!(className.equals(sClassName))) {
             return className.compareTo(sClassName);
-        }
-        return (int) Math.round(this.getPrice() - specifiedObject.getPrice());
+        }//once sorted by class names it is then sorted by price
+        return (int) Double.compare(this.getPrice(), specifiedObject.getPrice());
+        //double.compare is more accurate when comparing decimals
 
     }
 

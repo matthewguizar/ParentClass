@@ -25,7 +25,8 @@ public class Main {
             new Shirt(Shirt.Size.LARGE, 29.99, "Blue", "ADIDAS"),
             new Pants(34, 104.99, "Red", "JANGLER"),
         };
-
+        
+        Arrays.sort(products);
         printArray(products);
     }
 
