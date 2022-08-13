@@ -3,10 +3,12 @@ package models;
 import java.util.Objects;
 
 public class Shirt extends Product {
-    public enum Size {
-        SMALL, MEDIUM, LARGE
+
+    //enums contain a limited number of constants. Collection of static final constants
+    public enum Size { //making sure shirt sizes can only be small/medium/large
+        SMALL, MEDIUM, LARGE //constants are always capitalized
     }
-    private Size size;
+    private Size size; //size must be type Size(enum)
     
 
 

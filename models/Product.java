@@ -43,6 +43,7 @@ public abstract class Product implements Comparable<Product>{
         this.brand = brand;
     }
 
+    
     public abstract void fold();
     
     @Override
