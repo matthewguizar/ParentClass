@@ -1,5 +1,6 @@
 package models;
 
+//abstract because its only for inheritance. cannot create object of abstract class
 public abstract class Product implements Comparable<Product>{
     private double price;
     private String color;
